@@ -29,12 +29,16 @@ class Slicing():
             if result_polyline:
                 ### Array to Item
                 for j in xrange(len(result_polyline)):
-                    polylines.append(result_polyline[j])
+                    ### Polyline to PolylineCurve
+                    polyline_curve = rg.PolylineCurve(result_polyline[j])
+                    polylines.append(polyline_curve)
             
+            ### Offset
+
         return polylines
     
 
     def spiral_slicing(self, target_mesh, layer_height):
-        
+
         pass
         
