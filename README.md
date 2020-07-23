@@ -6,6 +6,13 @@ Cura 等の汎用のスライサには、花瓶モードや、スパイラルベ
 これを Grasshopper 上に、とりあえず目コピ実装する。  
 
 
+### ToDo  
+
+- [x] STL からスライスしポリラインを抽出  
+- [ ] ノズル径の分オフセット  
+- [ ] スパイラルに変更  
+
+
 ### Ref  
 
 - Special modes settings (Ultimaker Cura Support)
