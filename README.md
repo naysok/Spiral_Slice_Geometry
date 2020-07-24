@@ -12,6 +12,10 @@ Cura 等の汎用のスライサには、花瓶モードや、スパイラルベ
 - [ ] ノズル径の分オフセット  
 - [ ] スパイラルに変更  
 
+// オフセットの計算が重い、RhinoCommo のオフセットでミスる？、通常のコンポーネントではミスらない方がもう少し軽い。  
+
+// スパイラルにする際に各プロファイルに支店を合わせるのが難しそう。  
+
 
 ### Ref  
 
@@ -21,11 +25,14 @@ Cura 等の汎用のスライサには、花瓶モードや、スパイラルベ
 
 ### RhinoCommon Memo  
 
-- Intersection.MeshPlane Method (RhinoCommon)  
+- Intersection.MeshPlane Method  
   [https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Intersect_Intersection_MeshPlane.htm](https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Intersect_Intersection_MeshPlane.htm)  
 
-- Plane.WorldXY Property (RhinoCommon)  
+- Plane.WorldXY Property  
   [https://developer.rhino3d.com/api/RhinoCommon/html/P_Rhino_Geometry_Plane_WorldXY.htm](https://developer.rhino3d.com/api/RhinoCommon/html/P_Rhino_Geometry_Plane_WorldXY.htm)  
 
-- Curve.Offset Method (RhinoCommon)  
-  [https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Offset.htm](https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Offset.htm)  
+- Curve.Offset Method  
+  [https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Offset.htm](https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Offset.htm)   
+
+- Curve.Contains Method  
+  [https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Contains.htm](https://developer.rhino3d.com/api/RhinoCommon/html/M_Rhino_Geometry_Curve_Contains.htm)  
