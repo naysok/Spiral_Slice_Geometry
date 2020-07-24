@@ -14,6 +14,15 @@ class Utill():
 class Slicing():
 
 
+    def offset_curve_ghcp(self, curves, offset_value):
+
+        ### FAST !!
+        ### Offset Curve (Array)
+
+        off = ghcp.OffsetCurve(curves, offset_value, rg.Plane.WorldXY, 1)
+        return off
+
+
     def offset_curve(self, curve, offset_value):
 
         ### SLOW !!
